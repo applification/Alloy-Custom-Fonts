@@ -1,18 +1,14 @@
-Welcome to your Appcelerator Titanium Mobile Project
+Applification Quick Tip: Alloy Custom Fonts
+===========================================
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+This repo uses [Titanium Appcelerator Alloy](https://github.com/appcelerator/alloy), the official MVC framework for Titanium. 
 
+If you are new to Alloy head over to the [docs on Github](https://github.com/appcelerator/alloy/tree/master/docs) to get up to speed. 
 
+Key points: 
 
-----------------------------------
-Stuff our legal folk make us say:
-
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2008-2012 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+	1. Place your custom font in app / assets folder
+	2. Ensure you have an Info.plist file in the root of your project, and create an entry with the filename of your custom font
+	3. In your .tss style sheet file add the following the element with your text in:
+	font: {fontSize: 24, fontFamily: "Lobster 1.3"}
+	
